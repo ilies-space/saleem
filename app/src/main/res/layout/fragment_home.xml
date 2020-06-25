@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d2dae2"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+    <LinearLayout
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/repairMan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedbtn2"
+            android:text="تصفح الفنيين"
+            android:textColor="#ffc048"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_margin="10sp"
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="أو"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/roundedbtn2"
+            android:text="إنشاء طلب"
+            android:textColor="#ffc048"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

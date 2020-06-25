@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:background="#fff" tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:title="@string/item_1" />
+        <group android:id="@+id/group1">
+            <item android:id="@+id/nav_workers" android:title="@string/item_2" />
+        </group>
+        <group android:id="@+id/group2">
+            <item android:id="@+id/nav_messages" android:title="@string/item_3" />
+        </group>
+        <group android:id="@+id/group3">
+            <item android:id="@+id/nav_qustions" android:title="@string/item_4" />
+        </group>
+        <group android:id="@+id/group4">
+            <item android:id="@+id/nav_about" android:title="@string/item_5" />
+        </group>
+        <group android:id="@+id/group5">
+            <item android:id="@+id/nav_contact" android:title="@string/item_6" />
+        </group>
+        <group android:id="@+id/group6">
+            <item android:id="@+id/nav_setting" android:title="@string/item_7" />
+            android:title="@string/item_8" /&gt;
+        </group>
+        <group android:id="@+id/group77">
+            <item android:id="@+id/nav_singout" android:title="@string/item_8" />
+        </group>
+    </group>
+</menu>

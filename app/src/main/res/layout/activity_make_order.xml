@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dcdde1"
+    tools:context=".makeOrder" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <ImageView
+            android:padding="3dp"
+
+            android:layout_margin="10sp"
+            android:id="@+id/notfication"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/notification"
+            android:contentDescription="notifications"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            tools:ignore="HardcodedText"
+            android:layout_margin="10sp"
+            android:padding="3dp"
+            android:id="@+id/location"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:contentDescription="locations"
+            app:srcCompat="@drawable/location" />
+
+        <TextView
+            tools:ignore="HardcodedText"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saleem"
+            android:textSize="26sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+        <ImageView
+            android:padding="5dp"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:tint="#fff"
+            android:layout_gravity="right"
+            android:layout_marginRight="20sp"
+            android:id="@+id/navbar"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/menu"
+            android:contentDescription="navBar" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:background="@drawable/roundedbg"
+        android:padding="10sp"
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+
+            android:background="@null"
+            android:layout_margin="5dp"
+            android:id="@+id/spinner0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:autoSizeTextType="uniform"
+            tools:ignore="NestedWeights"
+            tools:targetApi="o" />
+
+        <View
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Spinner
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:autoSizeTextType="uniform"
+            tools:targetApi="o" />
+
+        <View
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+
+        <Spinner
+            android:layout_margin="5dp"
+            android:background="@null"
+
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:autoSizeTextType="uniform"
+            tools:targetApi="o" />
+
+        <View
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <EditText
+            android:autoSizeTextType="uniform"
+
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:id="@+id/editText"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hintExmple"
+            tools:targetApi="o"
+            tools:ignore="Autofill,TextFields" />
+
+        <View
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            tools:ignore="HardcodedText"
+            android:textColor="@android:color/black"
+            android:text=" 6919 مرات, الخبر الجنوبية , الخبر 346224919 , السعودية "
+            tools:targetApi="o" />
+
+        <View
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:onClick="makeanOrder"
+            android:layout_marginBottom="20sp"
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:background="@drawable/roundedbtn"
+            android:id="@+id/button"
+            android:textSize="26sp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            tools:ignore="HardcodedText"
+            android:layout_marginHorizontal="80dp"
+            android:text="إنشاء طلب" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

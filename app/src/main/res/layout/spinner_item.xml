@@ -1,0 +1,12 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:autoSizeMaxTextSize="16sp"
+    android:autoSizeTextType="uniform"
+    android:gravity="center_vertical"
+    android:textColor="#2f3542"
+    android:drawableTint="#a4b0be"
+    android:drawableLeft="@drawable/arrow"
+
+    />
